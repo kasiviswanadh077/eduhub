@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="sectionHome">
+        <div class="bg-container d-flex flex-column justify-content-end">
+            <div class="tourism-card">
+                <h1 class="main-heading">WELCOME TO EDUHUB</h1>
+                <p class="paragraph">DOWNLOAD YOUR RESPECTIVE SUBJECT DOCUMENTS.</p>
+                <button class="button" onclick="display('sectionFavouritePlaces')">Get Started</button>
+            </div>
+        </div>
+
+    </div>
+    <div id="sectionFavouritePlaces">
+        <div class="favourite-places-bg-container">
+            <h1 class="favourite-places-heading">SUBJECTS NAMES AND DOCUMENTS</h1>
+            <div class="favourite-place-card-container d-flex flex-row" onclick="display('sectionAPPLIEDPHYSICSDetailedView')">
+                <div>
+                    <h1 class="favourite-place-card-heading">APPLIED PHYSICS</h1>
+                    <p class="favourite-place-card-description">
+                    </p>
+                </div>
+            </div>
+            <div class="favourite-place-card-container d-flex flex-row" onclick="display('sectionAPPLIEDCHEMISTRYDetailedView')">
+                <div>
+                    <h1 class="favourite-place-card-heading">APPLIED CHEMISTRY</h1>
+                    <p class="favourite-place-card-description">
+                    </p>
+                </div>
+            </div>
+            <div class="favourite-place-card-container d-flex flex-row" onclick="display('sectionBEEEDetailedView')">
+                <div>
+                    <h1 class="favourite-place-card-heading">BEEE</h1>
+                    <p class="favourite-place-card-description">
+
+                    </p>
+                </div>
+
+            </div>
+            <div class="favourite-place-card-container d-flex flex-row" onclick="display('sectionLINEARALGEBRAANDCALCULUSDetailedView')">
+                <div>
+                    <h1 class="favourite-place-card-heading">LINEAR ALGEBRA AND CALCULUS</h1>
+                    <p class="favourite-place-card-description">
+
+                    </p>
+                </div>
+
+            </div>
+            <div class="favourite-place-card-container d-flex flex-row" onclick="display('sectionADVANCEDCALCULUSDetailedView')">
+                <div>
+                    <h1 class="favourite-place-card-heading">ADVANCED CALCULUS</h1>
+                    <p class="favourite-place-card-description">
+
+                    </p>
+                </div>
+
+            </div>
+            <div class="favourite-place-card-container d-flex flex-row" onclick="display('sectionPPSDetailedView')">
+                <div>
+                    <h1 class="favourite-place-card-heading">PPS</h1>
+                    <p class="favourite-place-card-description">
+                    </p>
+                </div>
+
+            </div>
+            <div class="favourite-place-card-container d-flex flex-row" onclick="display('sectionENGLISHDetailedView')">
+                <div>
+                    <h1 class="favourite-place-card-heading">ENGLISH</h1>
+                    <p class="favourite-place-card-description">
+                    </p>
+                </div>
+
+            </div>
+            <div class="favourite-place-card-container d-flex flex-row" onclick="display('sectionDATASTRUCTURESDetailedView')">
+                <div>
+                    <h1 class="favourite-place-card-heading">DATA STRUCTURES</h1>
+                    <p class="favourite-place-card-description">
+                    </p>
+                </div>
+            </div>
+            <div class="favourite-place-card-container d-flex flex-row" onclick="display('sectionDBMSDetailedView')">
+                <div>
+                    <h1 class="favourite-place-card-heading">DBMS</h1>
+                    <p class="favourite-place-card-description">
+
+                    </p>
+                </div>
+
+            </div>
+            <div class="favourite-place-card-container d-flex flex-row" onclick="display('sectionPYTHONPROGRAMMINGDetailedView')">
+                <div>
+                    <h1 class="favourite-place-card-heading">PYTHON PR0GRAMMING</h1>
+                    <p class="favourite-place-card-description">
+                    </p>
+                </div>
+            </div>
+            <div class="favourite-place-card-container d-flex flex-row" onclick="display('sectionPANDSDetailedView')">
+                <div>
+                    <h1 class="favourite-place-card-heading">P AND S</h1>
+                    <p class="favourite-place-card-description">
+                    </p>
+                </div>
+            </div>
+            <div class="favourite-place-card-container d-flex flex-row" onclick="display('sectionDMSDetailedView')">
+                <div>
+                    <h1 class="favourite-place-card-heading">DMS</h1>
+                    <p class="favourite-place-card-description">
+                    </p>
+                </div>
+            </div>
+            <div class="favourite-place-card-container d-flex flex-row" onclick="display('sectionESDetailedView')">
+                <div>
+                    <h1 class="favourite-place-card-heading">ES</h1>
+                    <p class="favourite-place-card-description">
+                    </p>
+                </div>
+            </div>
+            <div class="favourite-place-card-container d-flex flex-row" onclick="display('sectionDECODetailedView')">
+                <div>
+                    <h1 class="favourite-place-card-heading">DECO</h1>
+                    <p class="favourite-place-card-description">
+                    </p>
+                </div>
+            </div>
+            <div class="favourite-place-card-container d-flex flex-row" onclick="display('sectionBEFADetailedView')">
+                <div>
+                    <h1 class="favourite-place-card-heading">BEFA</h1>
+                    <p class="favourite-place-card-description">
+                    </p>
+                </div>
+            </div>
+            <div class="favourite-place-card-container d-flex flex-row" onclick="display('sectionOOPDetailedView')">
+                <div>
+                    <h1 class="favourite-place-card-heading">OOP</h1>
+                    <p class="favourite-place-card-description">
+                    </p>
+                </div>
+            </div>
+            <div class="favourite-place-card-container d-flex flex-row" onclick="display('sectionDAADetailedView')">
+                <div>
+                    <h1 class="favourite-place-card-heading">DAA</h1>
+                    <p class="favourite-place-card-description">
+                    </p>
+                </div>
+            </div>
+            <div class="favourite-place-card-container d-flex flex-row" onclick="display('sectionADSDetailedView')">
+                <div>
+                    <h1 class="favourite-place-card-heading">ADS</h1>
+                    <p class="favourite-place-card-description">
+                    </p>
+                </div>
+            </div>
+            <div class="favourite-place-card-container d-flex flex-row" onclick="display('sectionWEBTECHNOLOGIESDetailedView')">
+                <div>
+                    <h1 class="favourite-place-card-heading">WEB TECHNOLOGIES</h1>
+                    <p class="favourite-place-card-description">
+                    </p>
+                </div>
+            </div>
+            <div class="favourite-place-card-container d-flex flex-row" onclick="display('sectionOSDetailedView')">
+                <div>
+                    <h1 class="favourite-place-card-heading">OS</h1>
+                    <p class="favourite-place-card-description">
+                    </p>
+                </div>
+            </div>
+            <div class="favourite-place-card-container d-flex flex-row" onclick="display('sectionACDDetailedView')">
+                <div>
+                    <h1 class="favourite-place-card-heading">ACD</h1>
+                    <p class="favourite-place-card-description">
+                    </p>
+                </div>
+            </div>
+            <div class="favourite-place-card-container d-flex flex-row" onclick="display('sectionSEMPPTSDetailedView')">
+                <div>
+                    <h1 class="favourite-place-card-heading">SEMINAR PPTS</h1>
+                    <p class="favourite-place-card-description">
+                    </p>
+                </div>
+            </div>
+            <button class="btn btn-dark" onclick="display('sectionHome')">back</button>
+        </div>
+    </div>
+    <div id="sectionAPPLIEDPHYSICSDetailedView">
+        <div class="detailed-view-bg-container">
+            <h1 class="detailed-view-heading">UNIT-WISE DOCUMENTS AND MODEL PAPERS</h1>
+            <div class="detailed-view-card-container">
+                <div class="detailed-view-card-text-container">
+                    <h1 class="detailed-view-card-heading">APPLIED PHYSICS</h1>
+                    <p>UNIT1 <a href="https://drive.google.com/drive/folders/1mrDcoGJIFf_NUKdMp8AI-QkrqkbCO6UN?usp=share_link">DOWNLOAD</a></p>
+                    <p>UNIT2 <a href="https://drive.google.com/drive/folders/1d1PALCRurF2Q3VrWJXADtoiiqhm6L1y3?usp=share_link">DOWNLOAD</a></p>
+                    <p>UNIT3 <a href="https://drive.google.com/drive/folders/1undfcHLXa2EScIcVvuIVdUJRq5qLWz1G?usp=share_link">DOWNLOAD</a></p>
+                    <p>UNIT4 <a href="https://drive.google.com/drive/folders/1WWxy1s3CEzuKYO_fd8ffUj1yexRG0RDa?usp=share_link">DOWNLOAD</a></p>
+                    <p>UNIT5 <a href="https://drive.google.com/drive/folders/1EAOzniU4mU-nDGyDB4wYrzdinLPEQIcv?usp=share_link">DOWNLOAD</a></p>
+                </div>
+            </div>
+            <button class="btn btn-dark" onclick="display('sectionFavouritePlaces')">
+                back
+            </button>
+        </div>
+    </div>
+    <div id="sectionAPPLIEDCHEMISTRYDetailedView">
+        <div class="detailed-view-bg-container">
+            <h1 class="detailed-view-heading">UNIT-WISE DOCUMENTS AND MODEL PAPERS</h1>
+            <div class="detailed-view-card-container">
+                <div class="detailed-view-card-text-container">
+                    <h1 class="detailed-view-card-heading">APPLIED CHEMISTRY</h1>
+                    <p>UNIT1 <a href="https://drive.google.com/file/d/1KRWQQoca9uNp7zWoNpQGmPUZuWIEiqk2/view?usp=share_link">DOWNLOAD</a></p>
+                    <p>UNIT2 <a href="/uploads/media/default/0001/01/540cb75550adf33f281f29132dddd14fded85bfc.pdf">DOWNLOAD</a></p>
+                    <p>UNIT3 <a href="https://drive.google.com/file/d/1HviLDH3FJDEDAYzmvenZnOgy2WdftFHl/view?usp=share_link">DOWNLOAD</a></p>
+                    <p>UNIT4 <a href="https://drive.google.com/file/d/1lDGGW--gHUfIAPuH6I-IZsNfef19NMwO/view?usp=share_link">DOWNLOAD</a></p>
+                    <p>UNIT5 <a href="https://drive.google.com/file/d/12LPB_Vgjt3XEFOBGa91LBNFnqc0FcnfW/view?usp=share_link">DOWNLOAD</a></p>
+                </div>
+            </div>
+            <button class="btn btn-dark" onclick="display('sectionFavouritePlaces')">
+                back
+            </button>
+        </div>
+    </div>
+    <div id="sectionBEEEDetailedView">
+        <div class="detailed-view-bg-container">
+            <h1 class="detailed-view-heading">UNIT-WISE DOCUMENTS AND MODEL PAPERS</h1>
+            <div class="detailed-view-card-container">
+                <div class="detailed-view-card-text-container">
+                    <h1 class="detailed-view-card-heading">BEEE</h1>
+                    <p>UNIT1 <a href="https://drive.google.com/file/d/1uPG5hhZAtlBUU3BoVIAwSeid4Ay4wau2/view?usp=share_link">DOWNLOAD</a></p>
+                    <p>UNIT2 <a href="https://drive.google.com/file/d/1UNuw09UXwhzwywAznVnRaKI16821HhYO/view?usp=share_link">DOWNLOAD</a></p>
+                    <p>UNIT3 <a href="https://drive.google.com/file/d/1EoGYhArOJZCxrjmPXrISlgM8T5eXXy6k/view?usp=share_link">DOWNLOAD</a></p>
+                    <p>UNIT4 <a href="https://drive.google.com/file/d/12qdxs9uJ_R_aj9dFlDLws8vABOHU3MdV/view?usp=share_link">DOWNLOAD</a></p>
+                    <p>UNIT5 <a href="https://drive.google.com/file/d/1E6itzKPNNBqbl6SQ3kWxvcaR8llRd60z/view?usp=share_link">DOWNLOAD</a></p>
+                </div>
+            </div>
+            <button class="btn btn-dark" onclick="display('sectionFavouritePlaces')">
+                back
+            </button>
+        </div>
+    </div>
+    <div id="sectionLINEARALGEBRAANDCALCULUSDetailedView">
+        <div class="detailed-view-bg-container">
+            <h1 class="detailed-view-heading">UNIT-WISE DOCUMENTS AND MODEL PAPERS</h1>
+            <div class="detailed-view-card-container">
+                <div class="detailed-view-card-text-container">
+                    <h1 class="detailed-view-card-heading">LINEAR ALGEBRA AND CALCULUS</h1>
+                    <p>UNIT1 <a href="https://drive.google.com/file/d/1FMiBsXtVcRybi_czYezEuyOokQm2FPB3/view?usp=share_link">DOWNLOAD</a></p>
+                    <p>UNIT2 <a href="/uploads/media/default/0001/01/540cb75550adf33f281f29132dddd14fded85bfc.pdf">DOWNLOAD</a></p>
+                    <p>UNIT3 <a href="/uploads/media/default/0001/01/540cb75550adf33f281f29132dddd14fded85bfc.pdf">DOWNLOAD</a></p>
+                    <p>UNIT4 <a href="/uploads/media/default/0001/01/540cb75550adf33f281f29132dddd14fded85bfc.pdf">DOWNLOAD</a></p>
+                    <p>UNIT5 <a href="/uploads/media/default/0001/01/540cb75550adf33f281f29132dddd14fded85bfc.pdf">DOWNLOAD</a></p>
+                </div>
+            </div>
+            <button class="btn btn-dark" onclick="display('sectionFavouritePlaces')">
+                back
+            </button>
+        </div>
+    </div>
+    <div id="sectionADVANCEDCALCULUSDetailedView">
+        <div class="detailed-view-bg-container">
+            <h1 class="detailed-view-heading">UNIT-WISE DOCUMENTS AND MODEL PAPERS</h1>
+            <div class="detailed-view-card-container">
+                <div class="detailed-view-card-text-container">
+                    <h1 class="detailed-view-card-heading">ADVANCED CALCULUS</h1>
+                    <p>UNIT1 <a href="https://drive.google.com/drive/folders/1ADojshUx_3rzPn75u4OCmtHuV91wSTVG?usp=share_link">DOWNLOAD</a></p>
+                    <p>UNIT2 <a href="https://drive.google.com/drive/folders/1oYXzwtp7FeJ6ZgHLcy_PU9EUr1eOWgW4?usp=share_link">DOWNLOAD</a></p>
+                    <p>UNIT3 <a href="https://drive.google.com/drive/folders/1yBvnPkstahX3pxUjv8xdo_zmVjtneg1c?usp=share_link">DOWNLOAD</a></p>
+                    <p>UNIT4 <a href="https://drive.google.com/drive/folders/1PKVqGNc8HFmwpFlas6cYU3Gc2mOzlKjM?usp=share_link">DOWNLOAD</a></p>
+                    <p>UNIT5 <a href="https://drive.google.com/drive/folders/1xC18-1SOMKFIWv1fjwyff6GeC0izOy7w?usp=share_link">DOWNLOAD</a></p>
+                </div>
+            </div>
+            <button class="btn btn-dark" onclick="display('sectionFavouritePlaces')">
+                back
+            </button>
+        </div>
+    </div>
+    <div id="sectionPPSDetailedView">
+        <div class="detailed-view-bg-container">
+            <h1 class="detailed-view-heading">UNIT-WISE DOCUMENTS AND MODEL PAPERS</h1>
+            <div class="detailed-view-card-container">
+                <div class="detailed-view-card-text-container">
+                    <h1 class="detailed-view-card-heading">PPS</h1>
+                    <p>UNIT1 <a href="/uploads/media/default/0001/01/540cb75550adf33f281f29132dddd14fded85bfc.pdf">DOWNLOAD</a></p>
+                    <p>UNIT2 <a href="/uploads/media/default/0001/01/540cb75550adf33f281f29132dddd14fded85bfc.pdf">DOWNLOAD</a></p>
+                    <p>UNIT3 <a href="/uploads/media/default/0001/01/540cb75550adf33f281f29132dddd14fded85bfc.pdf">DOWNLOAD</a></p>
+                    <p>UNIT4 <a href="/uploads/media/default/0001/01/540cb75550adf33f281f29132dddd14fded85bfc.pdf">DOWNLOAD</a></p>
+                    <p>UNIT5 <a href="/uploads/media/default/0001/01/540cb75550adf33f281f29132dddd14fded85bfc.pdf">DOWNLOAD</a></p>
+                </div>
+            </div>
+            <button class="btn btn-dark" onclick="display('sectionFavouritePlaces')">
+                back
+            </button>
+        </div>
+    </div>
+    <div id="sectionENGLISHDetailedView">
+        <div class="detailed-view-bg-container">
+            <h1 class="detailed-view-heading">UNIT-WISE DOCUMENTS AND MODEL PAPERS</h1>
+            <div class="detailed-view-card-container">
+                <div class="detailed-view-card-text-container">
+                    <h1 class="detailed-view-card-heading">ENGLISH</h1>
+                    <p>UNIT1 <a href="/uploads/media/default/0001/01/540cb75550adf33f281f29132dddd14fded85bfc.pdf">DOWNLOAD</a></p>
+                    <p>UNIT2 <a href="/uploads/media/default/0001/01/540cb75550adf33f281f29132dddd14fded85bfc.pdf">DOWNLOAD</a></p>
+                    <p>UNIT3 <a href="/uploads/media/default/0001/01/540cb75550adf33f281f29132dddd14fded85bfc.pdf">DOWNLOAD</a></p>
+                    <p>UNIT4 <a href="/uploads/media/default/0001/01/540cb75550adf33f281f29132dddd14fded85bfc.pdf">DOWNLOAD</a></p>
+                    <p>UNIT5 <a href="/uploads/media/default/0001/01/540cb75550adf33f281f29132dddd14fded85bfc.pdf">DOWNLOAD</a></p>
+                </div>
+            </div>
+            <button class="btn btn-dark" onclick="display('sectionFavouritePlaces')">
+                back
+            </button>
+        </div>
+    </div>
+    <div id="sectionDATASTRUCTURESDetailedView">
+        <div class="detailed-view-bg-container">
+            <h1 class="detailed-view-heading">UNIT-WISE DOCUMENTS AND MODEL PAPERS</h1>
+            <div class="detailed-view-card-container">
+                <div class="detailed-view-card-text-container">
+                    <h1 class="detailed-view-card-heading">DATA STRUCTURES</h1>
+                    <p>UNIT1 <a href="/uploads/media/default/0001/01/540cb75550adf33f281f29132dddd14fded85bfc.pdf">DOWNLOAD</a></p>
+                    <p>UNIT2 <a href="/uploads/media/default/0001/01/540cb75550adf33f281f29132dddd14fded85bfc.pdf">DOWNLOAD</a></p>
+                    <p>UNIT3 <a href="/uploads/media/default/0001/01/540cb75550adf33f281f29132dddd14fded85bfc.pdf">DOWNLOAD</a></p>
+                    <p>UNIT4 <a href="/uploads/media/default/0001/01/540cb75550adf33f281f29132dddd14fded85bfc.pdf">DOWNLOAD</a></p>
+                    <p>UNIT5 <a href="/uploads/media/default/0001/01/540cb75550adf33f281f29132dddd14fded85bfc.pdf">DOWNLOAD</a></p>
+                </div>
+            </div>
+            <button class="btn btn-dark" onclick="display('sectionFavouritePlaces')">
+                back
+            </button>
+        </div>
+    </div>
+    <div id="sectionDBMSDetailedView">
+        <div class="detailed-view-bg-container">
+            <h1 class="detailed-view-heading">UNIT-WISE DOCUMENTS AND MODEL PAPERS</h1>
+            <div class="detailed-view-card-container">
+                <div class="detailed-view-card-text-container">
+                    <h1 class="detailed-view-card-heading">DBMS</h1>
+                    <p>UNIT1 <a href="/uploads/media/default/0001/01/540cb75550adf33f281f29132dddd14fded85bfc.pdf">DOWNLOAD</a></p>
+                    <p>UNIT2 <a href="/uploads/media/default/0001/01/540cb75550adf33f281f29132dddd14fded85bfc.pdf">DOWNLOAD</a></p>
+                    <p>UNIT3 <a href="/uploads/media/default/0001/01/540cb75550adf33f281f29132dddd14fded85bfc.pdf">DOWNLOAD</a></p>
+                    <p>UNIT4 <a href="/uploads/media/default/0001/01/540cb75550adf33f281f29132dddd14fded85bfc.pdf">DOWNLOAD</a></p>
+                    <p>UNIT5 <a href="/uploads/media/default/0001/01/540cb75550adf33f281f29132dddd14fded85bfc.pdf">DOWNLOAD</a></p>
+                </div>
+            </div>
+            <button class="btn btn-dark" onclick="display('sectionFavouritePlaces')">
+                back
+            </button>
+        </div>
+    </div>
+    <div id="sectionPYTHONPROGRAMMINGDetailedView">
+        <div class="detailed-view-bg-container">
+            <h1 class="detailed-view-heading">UNIT-WISE DOCUMENTS AND MODEL PAPERS</h1>
+            <div class="detailed-view-card-container">
+                <div class="detailed-view-card-text-container">
+                    <h1 class="detailed-view-card-heading">PYTHON PROGRAMMING</h1>
+                    <p>UNIT1 <a href="/uploads/media/default/0001/01/540cb75550adf33f281f29132dddd14fded85bfc.pdf">DOWNLOAD</a></p>
+                    <p>UNIT2 <a href="/uploads/media/default/0001/01/540cb75550adf33f281f29132dddd14fded85bfc.pdf">DOWNLOAD</a></p>
+                    <p>UNIT3 <a href="/uploads/media/default/0001/01/540cb75550adf33f281f29132dddd14fded85bfc.pdf">DOWNLOAD</a></p>
+                    <p>UNIT4 <a href="/uploads/media/default/0001/01/540cb75550adf33f281f29132dddd14fded85bfc.pdf">DOWNLOAD</a></p>
+                    <p>UNIT5 <a href="/uploads/media/default/0001/01/540cb75550adf33f281f29132dddd14fded85bfc.pdf">DOWNLOAD</a></p>
+                </div>
+            </div>
+            <button class="btn btn-dark" onclick="display('sectionFavouritePlaces')">
+                back
+            </button>
+        </div>
+    </div>
+    <div id="sectionPANDSDetailedView">
+        <div class="detailed-view-bg-container">
+            <h1 class="detailed-view-heading">UNIT-WISE DOCUMENTS AND MODEL PAPERS</h1>
+            <div class="detailed-view-card-container">
+                <div class="detailed-view-card-text-container">
+                    <h1 class="detailed-view-card-heading">P AND S</h1>
+                    <p>UNIT1 <a href="/uploads/media/default/0001/01/540cb75550adf33f281f29132dddd14fded85bfc.pdf">DOWNLOAD</a></p>
+                    <p>UNIT2 <a href="/uploads/media/default/0001/01/540cb75550adf33f281f29132dddd14fded85bfc.pdf">DOWNLOAD</a></p>
+                    <p>UNIT3 <a href="/uploads/media/default/0001/01/540cb75550adf33f281f29132dddd14fded85bfc.pdf">DOWNLOAD</a></p>
+                    <p>UNIT4 <a href="/uploads/media/default/0001/01/540cb75550adf33f281f29132dddd14fded85bfc.pdf">DOWNLOAD</a></p>
+                    <p>UNIT5 <a href="/uploads/media/default/0001/01/540cb75550adf33f281f29132dddd14fded85bfc.pdf">DOWNLOAD</a></p>
+                </div>
+            </div>
+            <button class="btn btn-dark" onclick="display('sectionFavouritePlaces')">
+                back
+            </button>
+        </div>
+    </div>
+    <div id="sectionDMSDetailedView">
+        <div class="detailed-view-bg-container">
+            <h1 class="detailed-view-heading">UNIT-WISE DOCUMENTS AND MODEL PAPERS</h1>
+            <div class="detailed-view-card-container">
+                <div class="detailed-view-card-text-container">
+                    <h1 class="detailed-view-card-heading">DMS</h1>
+                    <p>UNIT1 <a href="/uploads/media/default/0001/01/540cb75550adf33f281f29132dddd14fded85bfc.pdf">DOWNLOAD</a></p>
+                    <p>UNIT2 <a href="/uploads/media/default/0001/01/540cb75550adf33f281f29132dddd14fded85bfc.pdf">DOWNLOAD</a></p>
+                    <p>UNIT3 <a href="/uploads/media/default/0001/01/540cb75550adf33f281f29132dddd14fded85bfc.pdf">DOWNLOAD</a></p>
+                    <p>UNIT4 <a href="/uploads/media/default/0001/01/540cb75550adf33f281f29132dddd14fded85bfc.pdf">DOWNLOAD</a></p>
+                    <p>UNIT5 <a href="/uploads/media/default/0001/01/540cb75550adf33f281f29132dddd14fded85bfc.pdf">DOWNLOAD</a></p>
+                </div>
+            </div>
+            <button class="btn btn-dark" onclick="display('sectionFavouritePlaces')">
+                back
+            </button>
+        </div>
+    </div>
+    <div id="sectionESDetailedView">
+        <div class="detailed-view-bg-container">
+            <h1 class="detailed-view-heading">UNIT-WISE DOCUMENTS AND MODEL PAPERS</h1>
+            <div class="detailed-view-card-container">
+                <div class="detailed-view-card-text-container">
+                    <h1 class="detailed-view-card-heading">ES</h1>
+                    <p>UNIT1 <a href="/uploads/media/default/0001/01/540cb75550adf33f281f29132dddd14fded85bfc.pdf">DOWNLOAD</a></p>
+                    <p>UNIT2 <a href="/uploads/media/default/0001/01/540cb75550adf33f281f29132dddd14fded85bfc.pdf">DOWNLOAD</a></p>
+                    <p>UNIT3 <a href="/uploads/media/default/0001/01/540cb75550adf33f281f29132dddd14fded85bfc.pdf">DOWNLOAD</a></p>
+                    <p>UNIT4 <a href="/uploads/media/default/0001/01/540cb75550adf33f281f29132dddd14fded85bfc.pdf">DOWNLOAD</a></p>
+                    <p>UNIT5 <a href="/uploads/media/default/0001/01/540cb75550adf33f281f29132dddd14fded85bfc.pdf">DOWNLOAD</a></p>
+                </div>
+            </div>
+            <button class="btn btn-dark" onclick="display('sectionFavouritePlaces')">
+                back
+            </button>
+        </div>
+    </div>
+    <div id="sectionDECODetailedView">
+        <div class="detailed-view-bg-container">
+            <h1 class="detailed-view-heading">UNIT-WISE DOCUMENTS AND MODEL PAPERS</h1>
+            <div class="detailed-view-card-container">
+                <div class="detailed-view-card-text-container">
+                    <h1 class="detailed-view-card-heading">DECO</h1>
+                    <p>UNIT1 <a href="/uploads/media/default/0001/01/540cb75550adf33f281f29132dddd14fded85bfc.pdf">DOWNLOAD</a></p>
+                    <p>UNIT2 <a href="/uploads/media/default/0001/01/540cb75550adf33f281f29132dddd14fded85bfc.pdf">DOWNLOAD</a></p>
+                    <p>UNIT3 <a href="/uploads/media/default/0001/01/540cb75550adf33f281f29132dddd14fded85bfc.pdf">DOWNLOAD</a></p>
+                    <p>UNIT4 <a href="/uploads/media/default/0001/01/540cb75550adf33f281f29132dddd14fded85bfc.pdf">DOWNLOAD</a></p>
+                    <p>UNIT5 <a href="/uploads/media/default/0001/01/540cb75550adf33f281f29132dddd14fded85bfc.pdf">DOWNLOAD</a></p>
+                </div>
+            </div>
+            <button class="btn btn-dark" onclick="display('sectionFavouritePlaces')">
+                back
+            </button>
+        </div>
+    </div>
+    <div id="sectionBEFADetailedView">
+        <div class="detailed-view-bg-container">
+            <h1 class="detailed-view-heading">UNIT-WISE DOCUMENTS AND MODEL PAPERS</h1>
+            <div class="detailed-view-card-container">
+                <div class="detailed-view-card-text-container">
+                    <h1 class="detailed-view-card-heading">BEFA</h1>
+                    <p>UNIT1 <a href="/uploads/media/default/0001/01/540cb75550adf33f281f29132dddd14fded85bfc.pdf">DOWNLOAD</a></p>
+                    <p>UNIT2 <a href="/uploads/media/default/0001/01/540cb75550adf33f281f29132dddd14fded85bfc.pdf">DOWNLOAD</a></p>
+                    <p>UNIT3 <a href="/uploads/media/default/0001/01/540cb75550adf33f281f29132dddd14fded85bfc.pdf">DOWNLOAD</a></p>
+                    <p>UNIT4 <a href="/uploads/media/default/0001/01/540cb75550adf33f281f29132dddd14fded85bfc.pdf">DOWNLOAD</a></p>
+                    <p>UNIT5 <a href="/uploads/media/default/0001/01/540cb75550adf33f281f29132dddd14fded85bfc.pdf">DOWNLOAD</a></p>
+                </div>
+            </div>
+            <button class="btn btn-dark" onclick="display('sectionFavouritePlaces')">
+                back
+            </button>
+        </div>
+    </div>
+    <div id="sectionOOPDetailedView">
+        <div class="detailed-view-bg-container">
+            <h1 class="detailed-view-heading">UNIT-WISE DOCUMENTS AND MODEL PAPERS</h1>
+            <div class="detailed-view-card-container">
+                <div class="detailed-view-card-text-container">
+                    <h1 class="detailed-view-card-heading">OOP</h1>
+                    <p>UNIT1 <a href="/uploads/media/default/0001/01/540cb75550adf33f281f29132dddd14fded85bfc.pdf">DOWNLOAD</a></p>
+                    <p>UNIT2 <a href="/uploads/media/default/0001/01/540cb75550adf33f281f29132dddd14fded85bfc.pdf">DOWNLOAD</a></p>
+                    <p>UNIT3 <a href="/uploads/media/default/0001/01/540cb75550adf33f281f29132dddd14fded85bfc.pdf">DOWNLOAD</a></p>
+                    <p>UNIT4 <a href="/uploads/media/default/0001/01/540cb75550adf33f281f29132dddd14fded85bfc.pdf">DOWNLOAD</a></p>
+                    <p>UNIT5 <a href="/uploads/media/default/0001/01/540cb75550adf33f281f29132dddd14fded85bfc.pdf">DOWNLOAD</a></p>
+                </div>
+            </div>
+            <button class="btn btn-dark" onclick="display('sectionFavouritePlaces')">
+                back
+            </button>
+        </div>
+    </div>
+    <div id="sectionDAADetailedView">
+        <div class="detailed-view-bg-container">
+            <h1 class="detailed-view-heading">UNIT-WISE DOCUMENTS AND MODEL PAPERS</h1>
+            <div class="detailed-view-card-container">
+                <div class="detailed-view-card-text-container">
+                    <h1 class="detailed-view-card-heading">DAA</h1>
+                    <p>UNIT1 <a href="/uploads/media/default/0001/01/540cb75550adf33f281f29132dddd14fded85bfc.pdf">DOWNLOAD</a></p>
+                    <p>UNIT2 <a href="/uploads/media/default/0001/01/540cb75550adf33f281f29132dddd14fded85bfc.pdf">DOWNLOAD</a></p>
+                    <p>UNIT3 <a href="/uploads/media/default/0001/01/540cb75550adf33f281f29132dddd14fded85bfc.pdf">DOWNLOAD</a></p>
+                    <p>UNIT4 <a href="/uploads/media/default/0001/01/540cb75550adf33f281f29132dddd14fded85bfc.pdf">DOWNLOAD</a></p>
+                    <p>UNIT5 <a href="/uploads/media/default/0001/01/540cb75550adf33f281f29132dddd14fded85bfc.pdf">DOWNLOAD</a></p>
+                </div>
+            </div>
+            <button class="btn btn-dark" onclick="display('sectionFavouritePlaces')">
+                back
+            </button>
+        </div>
+    </div>
+    <div id="sectionADSDetailedView">
+        <div class="detailed-view-bg-container">
+            <h1 class="detailed-view-heading">UNIT-WISE DOCUMENTS AND MODEL PAPERS</h1>
+            <div class="detailed-view-card-container">
+                <div class="detailed-view-card-text-container">
+                    <h1 class="detailed-view-card-heading">ADS</h1>
+                    <p>UNIT1 <a href="/uploads/media/default/0001/01/540cb75550adf33f281f29132dddd14fded85bfc.pdf">DOWNLOAD</a></p>
+                    <p>UNIT2 <a href="/uploads/media/default/0001/01/540cb75550adf33f281f29132dddd14fded85bfc.pdf">DOWNLOAD</a></p>
+                    <p>UNIT3 <a href="/uploads/media/default/0001/01/540cb75550adf33f281f29132dddd14fded85bfc.pdf">DOWNLOAD</a></p>
+                    <p>UNIT4 <a href="/uploads/media/default/0001/01/540cb75550adf33f281f29132dddd14fded85bfc.pdf">DOWNLOAD</a></p>
+                    <p>UNIT5 <a href="/uploads/media/default/0001/01/540cb75550adf33f281f29132dddd14fded85bfc.pdf">DOWNLOAD</a></p>
+                </div>
+            </div>
+            <button class="btn btn-dark" onclick="display('sectionFavouritePlaces')">
+                back
+            </button>
+        </div>
+    </div>
+    <div id="sectionWEBTECHNOLOGIESDetailedView">
+        <div class="detailed-view-bg-container">
+            <h1 class="detailed-view-heading">UNIT-WISE DOCUMENTS AND MODEL PAPERS</h1>
+            <div class="detailed-view-card-container">
+                <div class="detailed-view-card-text-container">
+                    <h1 class="detailed-view-card-heading">WEB TECHNOLOGIES</h1>
+                    <p>UNIT1 <a href="/uploads/media/default/0001/01/540cb75550adf33f281f29132dddd14fded85bfc.pdf">DOWNLOAD</a></p>
+                    <p>UNIT2 <a href="/uploads/media/default/0001/01/540cb75550adf33f281f29132dddd14fded85bfc.pdf">DOWNLOAD</a></p>
+                    <p>UNIT3 <a href="/uploads/media/default/0001/01/540cb75550adf33f281f29132dddd14fded85bfc.pdf">DOWNLOAD</a></p>
+                    <p>UNIT4 <a href="/uploads/media/default/0001/01/540cb75550adf33f281f29132dddd14fded85bfc.pdf">DOWNLOAD</a></p>
+                    <p>UNIT5 <a href="/uploads/media/default/0001/01/540cb75550adf33f281f29132dddd14fded85bfc.pdf">DOWNLOAD</a></p>
+                </div>
+            </div>
+            <button class="btn btn-dark" onclick="display('sectionFavouritePlaces')">
+                back
+            </button>
+        </div>
+    </div>
+    <div id="sectionOSDetailedView">
+        <div class="detailed-view-bg-container">
+            <h1 class="detailed-view-heading">UNIT-WISE DOCUMENTS AND MODEL PAPERS</h1>
+            <div class="detailed-view-card-container">
+                <div class="detailed-view-card-text-container">
+                    <h1 class="detailed-view-card-heading">OS</h1>
+                    <p>UNIT1 <a href="/uploads/media/default/0001/01/540cb75550adf33f281f29132dddd14fded85bfc.pdf">DOWNLOAD</a></p>
+                    <p>UNIT2 <a href="/uploads/media/default/0001/01/540cb75550adf33f281f29132dddd14fded85bfc.pdf">DOWNLOAD</a></p>
+                    <p>UNIT3 <a href="/uploads/media/default/0001/01/540cb75550adf33f281f29132dddd14fded85bfc.pdf">DOWNLOAD</a></p>
+                    <p>UNIT4 <a href="/uploads/media/default/0001/01/540cb75550adf33f281f29132dddd14fded85bfc.pdf">DOWNLOAD</a></p>
+                    <p>UNIT5 <a href="/uploads/media/default/0001/01/540cb75550adf33f281f29132dddd14fded85bfc.pdf">DOWNLOAD</a></p>
+                </div>
+            </div>
+            <button class="btn btn-dark" onclick="display('sectionFavouritePlaces')">
+                back
+            </button>
+        </div>
+    </div>
+    <div id="sectionACDDetailedView">
+        <div class="detailed-view-bg-container">
+            <h1 class="detailed-view-heading">UNIT-WISE DOCUMENTS AND MODEL PAPERS</h1>
+            <div class="detailed-view-card-container">
+                <div class="detailed-view-card-text-container">
+                    <h1 class="detailed-view-card-heading">ACD</h1>
+                    <p>UNIT1 <a href="/uploads/media/default/0001/01/540cb75550adf33f281f29132dddd14fded85bfc.pdf">DOWNLOAD</a></p>
+                    <p>UNIT2 <a href="/uploads/media/default/0001/01/540cb75550adf33f281f29132dddd14fded85bfc.pdf">DOWNLOAD</a></p>
+                    <p>UNIT3 <a href="/uploads/media/default/0001/01/540cb75550adf33f281f29132dddd14fded85bfc.pdf">DOWNLOAD</a></p>
+                    <p>UNIT4 <a href="/uploads/media/default/0001/01/540cb75550adf33f281f29132dddd14fded85bfc.pdf">DOWNLOAD</a></p>
+                    <p>UNIT5 <a href="/uploads/media/default/0001/01/540cb75550adf33f281f29132dddd14fded85bfc.pdf">DOWNLOAD</a></p>
+                </div>
+            </div>
+            <button class="btn btn-dark" onclick="display('sectionFavouritePlaces')">
+                back
+            </button>
+        </div>
+    </div>
+    <div id="sectionSEMPPTSDetailedView">
+        <div class="detailed-view-bg-container">
+            <h1 class="detailed-view-heading">DOWNLOAD YOUR RESPECTIVE PPTS</h1>
+            <div class="detailed-view-card-container">
+                <div class="detailed-view-card-text-container">
+                    <h1 class="detailed-view-card-heading">SEMINAR PPTS</h1>
+                    <p>AI <a href="/uploads/media/default/0001/01/540cb75550adf33f281f29132dddd14fded85bfc.pdf">DOWNLOAD</a></p>
+                    <p>MACHINE LEARNING <a href="/uploads/media/default/0001/01/540cb75550adf33f281f29132dddd14fded85bfc.pdf">DOWNLOAD</a></p>
+                    <p>BLUE BRIAN <a href="/uploads/media/default/0001/01/540cb75550adf33f281f29132dddd14fded85bfc.pdf">DOWNLOAD</a></p>
+                    <p>IOT <a href="/uploads/media/default/0001/01/540cb75550adf33f281f29132dddd14fded85bfc.pdf">DOWNLOAD</a></p>
+                    <p>SMART BIN <a href="/uploads/media/default/0001/01/540cb75550adf33f281f29132dddd14fded85bfc.pdf">DOWNLOAD</a></p>
+                </div>
+            </div>
+            <button class="btn btn-dark" onclick="display('sectionFavouritePlaces')">
+                back
+            </button>
+        </div>
+    </div>
+    <script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+</body>
+
+</html>
